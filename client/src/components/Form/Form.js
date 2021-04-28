@@ -14,6 +14,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
   useEffect(() => {
     if (post) setPostData(post);
+
   }, [post]);
 
   const clear = () => {
@@ -32,6 +33,9 @@ const Form = ({ currentId, setCurrentId }) => {
       clear();
     }
   };
+  const deleteTag = () =>{
+    
+  }
 
   return (
     <Paper className={classes.paper}>
@@ -50,3 +54,6 @@ const Form = ({ currentId, setCurrentId }) => {
 };
 
 export default Form;
+
+
+
